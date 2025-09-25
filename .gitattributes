@@ -1,2 +1,30 @@
-# Auto detect text files and perform LF normalization
+# Normalize text files to LF in repo
 * text=auto
+
+# Unity-specific files that must always be LF
+*.meta text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.mat text eol=lf
+*.anim text eol=lf
+*.controller text eol=lf
+
+# Treat code files as text
+*.cs text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.shader text eol=lf
+
+# Binary files - don't modify line endings
+*.fbx binary
+*.blend binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.tga binary
+*.psd binary
+*.exr binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.mp4 binary
